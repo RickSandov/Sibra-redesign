@@ -1,5 +1,7 @@
 // Initialize AOS
-AOS.init();
+AOS.init({
+  dataAosOnce: true,
+});
 
 // Get the navbar
 let navbar = document.getElementById("navbar");
