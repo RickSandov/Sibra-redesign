@@ -1,0 +1,308 @@
+.propertie {
+    // width: 80%;
+    width: 1300px;
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto 4rem auto;
+
+
+    @include respond(from-tab-land) {
+        margin: 95px auto 4rem auto;
+    }
+
+    @include respond(tab-port){
+        flex-direction: column;
+        align-items: center;
+    }
+
+    & .back {
+        margin: 1.5rem;
+        
+        & a {
+            display: flex;
+            align-items: center;
+            transition: .3s all ease-in-out;
+            justify-content: flex-start;
+            width: fit-content;
+
+            & svg {
+                height: 20px;
+                width: 20px;
+                margin-right: 1rem;
+            }
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__content {
+        width: 100%;
+        flex: 0 1 calc(70% - 4rem);
+
+        @include respond(tab-port){
+            flex: 0 1 100%;
+        }
+
+        &:hover~.image img {
+            transform: scale(1.1);
+        }
+    }
+
+    &__images {
+        width: 100%;
+        overflow: hidden;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1rem;
+        border-radius: .8rem;
+        cursor: pointer;
+
+        @include respond(phone){
+            height: 360px;
+        }
+
+        & .image {
+            transition: .5s all linear;
+            grid-column: 5 / -1;
+            overflow: hidden;
+
+            &:nth-child(1) {
+                grid-column: 1 / 5;
+                grid-row: 1 / -1;
+            }
+
+            &:nth-child(2) {
+                grid-row: 1 / 2;
+            }
+
+            &:nth-child(3) {
+                grid-row: 2 / -1;
+            }
+
+            @include respond(phone){
+
+                &:nth-child(1) {
+                    grid-column: 1 / -1;
+                    grid-row: 1 / 2;
+                }
+    
+                &:nth-child(2) {
+                    grid-column: 1 / 4;
+                    grid-row: 2 / -1;
+                }
+    
+                &:nth-child(3) {
+                    grid-column: 4 / -1;
+                }
+            }
+
+            & img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                transition: .5s all linear;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+
+    }
+
+    &__features {
+        margin-top: 2rem;
+        display: flex;
+        // flex-direction: column;
+        justify-content: space-between;
+
+        
+
+        & .left {
+            width: 100%;
+            flex: 0 1 calc(70% - 3rem);
+            display: flex;
+            flex-direction: column;
+
+            & h3 {
+                line-height: 1;
+                margin-bottom: .3rem;
+            }
+
+            & .features {
+                margin-top: 3rem;
+
+                & svg {
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+        }
+
+        & .right {
+            width: 100%;
+            flex: 0 1 30%;
+            text-align-last: right;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+
+
+            & .price {
+                font-size: 30px;
+                height: 30%;
+                margin-top: 1rem;
+                text-decoration: underline;
+                cursor: pointer;
+                transition: .3s all linear;
+
+                &:hover {
+                    color: $color-text;
+                }
+            }
+
+            & .map {
+                height: 60%;
+                cursor: pointer;
+
+                & img {
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        @include respond(phone){
+            flex-direction: column;
+            
+            & .right {
+                & .price {
+                    margin: 3rem 0 1rem 0;
+                }
+            }
+        }
+    }
+
+    &__description {
+        margin-top: 3rem;
+        & h4 {}
+
+        & p {}
+    }
+
+    &__resume {
+        margin-top: 3rem;
+
+        & h3 {}
+
+        & ul {
+            width: 40%;
+            margin-top: 2rem;
+            list-style: none;
+            li {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+                border-bottom: 1px solid $color-text-light;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                & p {
+                    font-weight: 600;
+                }
+            }
+
+            @include respond(tab-port){
+                width: 90%;
+            }
+        }
+    }
+
+    &__contact {
+        // width: 350px;
+        width: 100%;
+        max-width: 90%;
+        flex: 0 1 30%;
+        align-self: flex-start;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include shadow-light;
+        border-radius: .8rem;
+        
+        @include respond(from-tab-land){
+            margin-top: 12rem;
+        }
+
+        & h3 {}
+
+        & .seller {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+
+            &__img {
+                border-radius: 100rem;
+                width: 100px;
+                overflow: hidden;
+
+                & img {
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                    transition: .5s all linear;
+                }
+            }
+
+            &__name {
+                margin-top: .7rem;
+            }
+
+            
+        }
+
+        & .phone {
+            margin-top: .5rem;
+            display: flex;
+            align-items: center;
+
+            & svg {
+                height: 15px;
+                width: 15px;
+                margin-right: .5rem;
+            }
+
+            & a {
+                font-size: 20px;
+            }
+        }
+
+        & form {
+
+            & input {
+                @include shadow-light;
+            }
+        }
+
+        & button {
+            margin-top: 2rem;
+        }
+
+        @include respond(tab-port){
+            margin: 3rem auto 0 auto;
+        }
+    }
+}

@@ -1,399 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carpintería</title>
+    <title>SibraDgo</title>
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <div class="properties">
-        <div class="properties__cards">
+    <nav class="nav" id="navbar">
+        <a href="index.html" class="logo"><img src="images/sibra.png" alt=""></a>
+        <input type="checkbox" id="check">
+        <label for="check" data-aos="popUp" class="nav-check">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44"
+                viewBox="0 0 24 24" stroke-width="1" stroke="#2E3238" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+        </label>
+        <ul>
+            <li class="active"><a href="propiedades.html">Inicio</a></li>
+            <li><a href="propiedades.html">Compra</a></li>
+            <li><a href="nosotros.html">vende</a></li>
+            <li><a href="#contacto">blog</a></li>
+            <li class="juridico"><a href="#contacto">jurídico</a></li>
+            <li><a href="index.html">nosotros</a></li>
+        </ul>
+    </nav>
 
 
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <p>Cerrada del amanecer 154. Real del Country</p>
-                </div>
-            </div>
 
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <p>Cerrada del amanecer 154. Real del Country</p>
-                </div>
-            </div>
-
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <p>Cerrada del amanecer 154. Real del Country</p>
-                </div>
-            </div>
-
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <div class="address">
-                        <p>Cerrada del amanecer 154. Real del Country</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <div class="address">
-                        <p>Cerrada del amanecer 154. Real del Country</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <p>Cerrada del amanecer 154. Real del Country</p>
-                </div>
-            </div>
-
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <p>Cerrada del amanecer 154. Real del Country</p>
-                </div>
-            </div>
-
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <p>Cerrada del amanecer 154. Real del Country</p>
-                </div>
-            </div>
-
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <div class="address">
-                        <p>Cerrada del amanecer 154. Real del Country</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <div class="address">
-                        <p>Cerrada del amanecer 154. Real del Country</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <p>Cerrada del amanecer 154. Real del Country</p>
-                </div>
-            </div>
-
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <p>Cerrada del amanecer 154. Real del Country</p>
-                </div>
-            </div>
-
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <p>Cerrada del amanecer 154. Real del Country</p>
-                </div>
-            </div>
-
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <div class="address">
-                        <p>Cerrada del amanecer 154. Real del Country</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="propertie-card">
-                <div class="propertie-card__img">
-                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
-                </div>
-                <div class="propertie-card__info">
-                    <h5 class="price">$850,000</h5>
-                    <div class="features">
-                        <div class="features__item">
-                            <svg><use href="images/bed.svg#bed"></use></svg>
-                            <span>4cts</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/bath.svg#bath"></use></svg>
-                            <span>3bñs</span>
-                        </div>
-                        <div class="features__item">
-                            <svg><use href="images/ruler.svg#ruler"></use></svg>
-                            <span>3m<sup>2</sup></span>
-                        </div>
-                    </div>
-                    <div class="address">
-                        <p>Cerrada del amanecer 154. Real del Country</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- https://img-hw.xnxx-cdn.com/videos/thumbs169xnxxposter/af/a7/46/afa74635c31e3138e1c2d18886abcdf1/afa74635c31e3138e1c2d18886abcdf1.17.jpg -->
-
-
+    <header class="header">
+        <div class="header__title">
+            <h1>Encuentra la casa de tus sueños</h1>
         </div>
-        <div class="properties__map">
-           
+        <div class="header__search">
+            <div class="options">
+                <input type="radio" id="compra" name="option" checked>
+                <label for="compra">
+                    <div class="option">
+                        compra
+                    </div>
+                </label>
+                <input type="radio" id="renta" name="option">
+                <label for="renta">
+                    <div class="option">
+                        renta
+                    </div>
+                </label>
+            </div>
+            <div class="search-form">
+                <input type="text" placeholder="Código postal. Por ejemplo: 34000 (Zona Centro)">
+                <button id="search-submit" class="btn btn-secondary"><svg>
+                        <use href="images/search.svg#search"></use>
+                    </svg></button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="container solutions">
+        <div class="solutions__container">
+            <div class="solutions__title">
+                <h2>Te solucionamos <strong>todo</strong></h2>
+            </div>
+            <div class="solutions__content">
+                <p>
+                    Más de <u>20 años de experiencia</u> nos respaldan. Contamos con el <strong>mejor servicio</strong>
+                    y <strong>asesores preparados</strong> para
+                    brindarte excelencia. Nadie trabaja como <strong>SIBRA</strong>, pues tenemos proyectos únicos e
+                    innovadores. Acercate a
+                    <strong>SIBRA</strong> que nosotros te solucionamos <strong>TODO</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container contact-section">
+        <div class="contact-section__card">
+            <h3>Contáctanos</h3>
+            <span>Hemos realizado 5 colonias y nuestros socios nos siguen recomendando. Si tienes un terreno con
+                bastantes
+                hectareas y quieres <strong>Lotificar</strong> o <strong>Vender</strong> Rapido, CONTÁCTANOS. ¡TE
+                HACEMOS EL PROYECTO!</span>
+            <form action="" class="contact-section__form form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="number" placeholder="Teléfono" required>
+                <input type="mail" placeholder="Correo electrónico">
+            </form>
+            <button id="contact-submit" class="btn btn-primary"><span>enviar</span></button>
         </div>
     </div>
-    
+
+    <footer class="footer">
+        <div class="contact-box">
+            <div class="contact">
+                <h4>Información de contacto</h4>
+                <div class="contact__address">
+                    <a href="#">Durango, Dgo.</a>
+                </div>
+                <div class="contact__phones">
+                    <a href="#">(618) 123 4567</a>
+                    <a href="#">(618) 987 6543</a>
+                </div>
+            </div>
+            <div class="social-media">
+                <div class="social-media__icons">
+                    <a href="#"><svg>
+                            <use href="images/fb.svg#fb"></use>
+                        </svg></a>
+                    <a href="#"><svg>
+                            <use href="images/ig.svg#ig"></use>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <a href="#" class="logo">Sibra</a>
+            <div class="info__privacy">
+                <a href="#">Términos y condiciones <strong>|</strong> </a>
+                <a href="#">Política de privacidad <strong>|</strong> </a>
+                <a href="#">Política de cookies</a>
+            </div>
+            <div class="info__gg">
+                <p>SIBRA ©2020 by</p>
+                <a href=""><img src="assets/images/gg.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/index.js"></script>
 </body>
+
 </html>

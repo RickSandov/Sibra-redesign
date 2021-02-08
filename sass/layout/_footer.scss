@@ -1,0 +1,139 @@
+.footer {
+    
+    @include respond(from-tab-land){
+        height: 45vh;
+    }
+
+    background-color: $color-text;
+    width: 100%;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 6rem;
+    padding-bottom: 3rem;
+
+    & a {
+        text-decoration: none;
+        font-size: 16px;
+        // text-transform: uppercase;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    & h4 {
+        font-size: 23px;
+        // font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        line-height: 1;
+    }
+
+    & .contact-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(tab-port){
+            flex-direction: column;
+        }
+        // align-items: center;
+
+        & .contact {
+
+            &__phones {
+                margin: 1rem 0;
+                a {
+                    display: block;
+                }
+            }
+            
+        }
+
+        & .social-media {
+            
+           
+            @include respond(tab-port){
+                margin: 5rem 0;
+
+                & h4 {
+                    margin: 0;
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            &__icons {
+                display: flex;
+                
+
+                @include respond(from-tab-land){
+                    justify-content: flex-end;
+                }
+
+                
+
+                
+
+                & svg {
+                    width: 40px;
+                    height: 40px;
+
+                    transition: .3s all linear;
+
+                    &:hover {
+                        transform: scale(1.04);
+                        @include shadow;
+                    }
+
+                    &:first-child{
+                        margin-right: 2rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    & .info {
+        text-align: center;
+        align-self: center;
+
+        & .logo {
+            text-decoration: none;
+            font-size: 30px !important;
+            text-transform: uppercase;
+            color: white;
+            margin: 0;
+        }
+
+        &__privacy {
+            margin-top: 1.5rem;
+        }
+
+        &__gg {
+            margin-top: 2.2rem;
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            align-items: center;
+
+            & p {
+                line-height: 0;
+                // margin-bottom: -3px;
+            }
+
+            & a {
+                margin-left: 4px;
+                
+
+                & img {
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+}

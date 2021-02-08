@@ -5,10 +5,16 @@
 
 @import "components/nav";
 @import "components/card";
-
-
+@import "components/container";
+@import "components/form";
 
 @import "pages/properties";
+@import "pages/propertie";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/solutions";
+@import "layout/contact";
 
 @import "base/animations";
 @import "base/base";

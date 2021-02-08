@@ -1,0 +1,49 @@
+
+// https://images.homify.com/c_fill,f_auto,h_500,q_auto,w_1280/v1497158222/p/photo/image/2054812/1.jpg
+
+.contact-section {
+    background: linear-gradient(to right, rgba($color-text, 0.6), rgba($color-text, 0.6)), url("https://images.homify.com/c_fill,f_auto,h_500,q_auto,w_1280/v1497158222/p/photo/image/2054812/1.jpg") no-repeat center bottom fixed;
+    background-size: cover;
+    // background-attachment: fixed;
+    width: 100%;
+    padding: 4rem 0;
+
+    &__card {
+        background-color: rgba($color-text, 0.6);
+        width: 1000px;
+        // height: 70%;
+        max-width: 90%;
+        padding: 2rem;
+        border-radius: .8rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & span {
+            color: rgb(187, 187, 187);
+            margin-bottom: 0;
+        
+            @include respond(tab-port){
+                width: 100%;
+                font-weight: 400;
+                font-size: 16px;
+            }
+
+            & strong {
+                color: white;
+            }
+        }
+
+        & button {
+            margin-top: 2rem;
+        }
+    }
+
+    &__form {
+        
+    }
+
+    
+}
+

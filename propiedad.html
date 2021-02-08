@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SibraDgo</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="nav" id="navbar">
+        <a href="index.html" class="logo"><img src="images/sibra.png" alt=""></a>
+        <input type="checkbox" id="check">
+        <label for="check" data-aos="popUp" class="nav-check">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44"
+                viewBox="0 0 24 24" stroke-width="1" stroke="#2E3238" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+        </label>
+        <ul>
+            <li class="active"><a href="propiedades.html">Inicio</a></li>
+            <li><a href="propiedades.html">Compra</a></li>
+            <li><a href="nosotros.html">vende</a></li>
+            <li><a href="#contacto">blog</a></li>
+            <li class="juridico"><a href="#contacto">jurídico</a></li>
+            <li><a href="index.html">nosotros</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="propertie">
+        <div class="propertie__content">
+            <div class="back">
+                <a href="propiedades.html">
+                    <svg>
+                        <use href="images/back.svg#back"></use>
+                    </svg>
+                    volver a propiedades
+                </a>
+            </div>
+            <div class="propertie__images">
+                <div class="image">
+                    <img src="https://verplanos.com/wp-content/uploads/2018/02/facahda-plano-de-casa-moderna-mediterranea.jpg"
+                    alt="">
+                </div>
+                <div class="image">
+                    <img src="https://i.pinimg.com/736x/0b/46/0f/0b460f42afc5a79959ccd4b3fa5eb323.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="https://www.elmueble.com/medio/2017/06/11/salon-de-campo-con-paredes-de-piedra-y-encaladas-blancas_81e85461.jpg"
+                    alt="">
+                </div>
+            </div>
+            <div class="propertie__features">
+                <div class="left">
+                    <!-- Address -->
+                    <h3>Cerrada del amanecer 166. Real del Country</h3>
+                    <p>Durango, Dgo. 34162</p>
+                    <div class="features">
+                        <div class="features__item">
+                            <svg>
+                                <use href="images/bed.svg#bed"></use>
+                            </svg>
+                            <span>4cts</span>
+                        </div>
+                        <div class="features__item">
+                            <svg>
+                                <use href="images/bath.svg#bath"></use>
+                            </svg>
+                            <span>3bñs</span>
+                        </div>
+                        <div class="features__item">
+                            <svg>
+                                <use href="images/ruler.svg#ruler"></use>
+                            </svg>
+                            <span>3m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <span class="price">$759,999</span>
+                    <div class="map">
+                        <img src="https://i.blogs.es/b4dd5c/maps/450_1000.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="propertie__description">
+                <h3>Descripción</h3>
+                <p>Planta baja; 2 recamaras una con closet, baño completo, amplio patio de servicio, cochera para 2
+                    autos. Planta alta; 2 recamaras con closet, terraza techada, medio baño, patio.</p>
+            </div>
+            <div class="propertie__resume">
+                <h3>Ficha técnica</h3>
+                <ul>
+                    <li>
+                        <span>Terreno</span>
+                        <p>200m<sup>2</sup></p>
+                    </li>
+                    <li>
+                        <span>Metros construidos</span>
+                        <p>250m<sup>2</sup></p>
+                    </li>
+                    <li>
+                        <span>Recámaras</span>
+                        <p>4</p>
+                    </li>
+                    <li>
+                        <span>Baños</span>
+                        <p>3</p>
+                    </li>
+                    <li>
+                        <span>Cochera</span>
+                        <p>1 coche</p>
+                    </li>
+                    <li>
+                        <span>Crédito</span>
+                        <p>Sí</p>
+                    </li>
+                    <li>
+                        <span>Precio</span>
+                        <p>$759,999</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="propertie__contact">
+            <h3>Contacto</h3>
+            <div class="seller">
+                <div class="seller__img">
+                    <img src="images/gibs.jpg" alt="">
+                </div>
+                <span class="seller__name">Gibrán Vargas</span>
+            </div>
+            <div class="phone">
+                
+                <a href="tel:+6181234567">
+                    <svg>
+                        <use href="images/search.svg#search"></use>
+                    </svg>
+                    6181234567
+                </a>
+            </div>
+            <form action="" class="contact-section__form form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="number" placeholder="Teléfono" required>
+                <input type="mail" placeholder="Correo electrónico">
+            </form>
+            <button id="contact-submit" class="btn btn-primary"><span>enviar</span></button>
+        </div>
+    </div>
+
+    <div class="container contact-section">
+        <div class="contact-section__card">
+            <h3>Contáctanos</h3>
+            <span>Hemos realizado 5 colonias y nuestros socios nos siguen recomendando. Si tienes un terreno con
+                bastantes
+                hectareas y quieres <strong>Lotificar</strong> o <strong>Vender</strong> Rapido, CONTÁCTANOS. ¡TE
+                HACEMOS EL PROYECTO!</span>
+            <form action="" class="contact-section__form form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="number" placeholder="Teléfono" required>
+                <input type="mail" placeholder="Correo electrónico">
+            </form>
+            <button id="contact-submit" class="btn btn-primary"><span>enviar</span></button>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="contact-box">
+            <div class="contact">
+                <h4>Información de contacto</h4>
+                <div class="contact__address">
+                    <a href="#">Durango, Dgo.</a>
+                </div>
+                <div class="contact__phones">
+                    <a href="#">(618) 123 4567</a>
+                    <a href="#">(618) 987 6543</a>
+                </div>
+            </div>
+            <div class="social-media">
+                <div class="social-media__icons">
+                    <a href="#"><svg>
+                            <use href="images/fb.svg#fb"></use>
+                        </svg></a>
+                    <a href="#"><svg>
+                            <use href="images/ig.svg#ig"></use>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <a href="#" class="logo">Sibra</a>
+            <div class="info__privacy">
+                <a href="#">Términos y condiciones <strong>|</strong> </a>
+                <a href="#">Política de privacidad <strong>|</strong> </a>
+                <a href="#">Política de cookies</a>
+            </div>
+            <div class="info__gg">
+                <p>SIBRA ©2020 by</p>
+                <a href=""><img src="assets/images/gg.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>

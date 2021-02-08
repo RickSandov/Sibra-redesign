@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SibraDgo</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="nav" id="navbar">
+        <a href="index.html" class="logo"><img src="images/sibra.png" alt=""></a>
+        <input type="checkbox" id="check">
+        <label for="check" data-aos="popUp" class="nav-check">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44"
+                viewBox="0 0 24 24" stroke-width="1" stroke="#2E3238" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+        </label>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="active"><a href="proyectos.html">Compra</a></li>
+            <li><a href="nosotros.html">vende</a></li>
+            <li><a href="#contacto">blog</a></li>
+            <li class="juridico" ><a  href="#contacto">jurídico</a></li>
+            <li><a href="index.html">nosotros</a></li>
+        </ul>
+    </nav>
+
+    <div class="properties">
+        <div class="properties__cards">
+
+
+            <div onclick="location.href='/propiedad.html';" class="propertie-card">
+                <div class="propertie-card__img">
+                    <img src="https://i.pinimg.com/originals/16/95/31/169531410628f6e477a1ef3bc5042513.jpg" alt="Casa">
+                </div>
+                <div class="propertie-card__info">
+                    <h5 class="price">$850,000</h5>
+                    <div class="features">
+                        <div class="features__item">
+                            <svg>
+                                <use href="images/bed.svg#bed"></use>
+                            </svg>
+                            <span>4cts</span>
+                        </div>
+                        <div class="features__item">
+                            <svg>
+                                <use href="images/bath.svg#bath"></use>
+                            </svg>
+                            <span>3bñs</span>
+                        </div>
+                        <div class="features__item">
+                            <svg>
+                                <use href="images/ruler.svg#ruler"></use>
+                            </svg>
+                            <span>3m<sup>2</sup></span>
+                        </div>
+                    </div>
+                    <p>Cerrada del amanecer 154. Real del Country</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="properties__map">
+            <img src="https://i.blogs.es/b4dd5c/maps/1366_2000.png" alt="">
+        </div>
+    </div>
+
+    <a class="btn btn-float" href="#">
+        <svg>
+            <use href="images/marker.svg#marker"></use>
+        </svg>
+    </a>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

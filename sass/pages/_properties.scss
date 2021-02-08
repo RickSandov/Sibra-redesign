@@ -3,20 +3,22 @@
     padding: 18px;
     display: flex;
     justify-content: space-between;
+    margin-top: 90px;
 
     @include respond(tab-port){
         flex-direction: column;
+        margin-top: 60px;
     }
 
     &__map {
         width: 47%;
-        height: 96vh;
+        height: 85vh;
         flex: 0 1 calc(50% - 18px);
         background-color: rgb(235, 235, 235);
         border-radius: .8rem;
         position: absolute;
         right: 22px;
-        top: 18px;
+        top: 108px;
         clip-path: 0 0, 100% 0, 100% 100%, 0 100%;
 
         & img {

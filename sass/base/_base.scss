@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: $color-text;
     line-height: 1.2;
     background-color: #fff;
@@ -45,7 +45,7 @@ h1 {
 
 
 h2 {
-    font-size: 70px;
+    font-size: 45px;
 }
 
 
@@ -70,7 +70,7 @@ p {
     
     
     h2 {
-        font-size: 25px;
+        font-size: 40px;
     }
     
     
@@ -98,7 +98,7 @@ span {
     transition: .3s all linear;
     border: none;
     outline: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
 
     & span {
         font-size: 13px;
@@ -122,12 +122,18 @@ span {
     }
 
     &-secondary {
-        background-color: #fff;
+        background-color: $color-secondary;
         
         
         & span {
-            color: rgb(0, 43, 161);
+            color: white;
         }
+
+        &:hover {
+            background-color: darken($color-secondary, 18);
+        }
+
+        
     }
 
     &-success {
@@ -137,6 +143,33 @@ span {
             & span {
                 color: $color-success !important;
             }
+        }
+    }
+
+    &-float {
+        @include respond(from-tab-land){
+            display: none;
+        }
+        padding: 2.5rem;
+        @include shadow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 5vw;
+        right: 5vw;
+        background-color: white;
+        animation: appear .5s ease-in-out 2s;
+        backface-visibility: hidden;
+        animation-fill-mode: backwards;
+
+
+        z-index: 101;
+
+        & svg {
+            height: 30px;
+            width: 30px;
+            color: $color-text;
         }
     }
 

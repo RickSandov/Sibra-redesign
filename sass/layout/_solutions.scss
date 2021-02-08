@@ -1,0 +1,49 @@
+.solutions {
+    height: 350px;
+    margin-top: 0;
+    width: 90%;
+
+    &__container {
+        display: flex;
+        justify-content: center; 
+    }
+
+    &__title {
+        width: 100%;
+        border-left: 5px solid $color-secondary;
+        display: flex;
+        align-items: center;
+        padding-left: 1.5rem;
+
+        & h2 {
+            line-height: 1;
+            font-weight: 300;
+
+            & strong {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__content {
+        width: 100%;
+
+        & p {
+            font-size: 18px;
+            // font-style: italic;
+        }
+
+    }
+
+    @include respond(tab-port) {
+        height: auto;
+        &__container {
+            flex-direction: column;
+            padding: 4.5rem 0;
+        }
+
+        & .solutions__title {
+            margin-bottom: 5rem;
+        }
+    }
+}
